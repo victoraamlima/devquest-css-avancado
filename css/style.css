@@ -1,0 +1,40 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+}
+
+.main-page {
+    display: grid;
+    grid: "header"
+          "main"
+          "footer";
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+}
+
+.main-page .header {
+    margin: 40px;
+    width: 100%;
+}
+
+.main-page .header img {
+    width: 150px;
+}
+
+.main-page .main-container {
+    display: grid;
+    grid: "image text ";
+}
+
+.main-page .main-container .text {
+    color: white;
+}
+
+.main-page .main-container .text a{
+    color: white;
+
+}

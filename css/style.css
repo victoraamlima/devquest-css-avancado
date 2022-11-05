@@ -16,19 +16,21 @@ body {
     background-image: url(../images/bg-desktop.svg);
     background-size: 1318px 800px;
     background-repeat: no-repeat;
-    grid-gap: 70px;
     padding: 65px;
 }
 
 .main-page .header img {
     width: 215px;
+    margin-bottom: 70px;
 }
 
 .main-page .main-container {
     display: grid;
     grid: "image text ";
     grid-template-columns: minmax(709px, 1fr) 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     grid-gap: 65px;
+    margin-bottom: 20px;
 }
 
 .main-page .main-container .image {
@@ -41,6 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    align-items: flex-start;
 }
 
 .main-page .main-container .text h2 {
@@ -52,20 +55,42 @@ body {
 .main-page .main-container .text p {
     font-size: 18.5px;
     font-weight: 400;
+    margin-bottom: 15px;
 }
 
 .main-page .main-container .text .btn{
     text-align: center;
     border-radius: 30px;
-    /* height: 60px; */
-    width: 120px; 
-    background-color: white;
-
-    padding: 15px 60px;
+    box-shadow: 5px 5px 20px 8px rgba(0,0,0,0.28); 
 }
 
 .main-page .main-container .text .btn a {
     color: hsl(257, 40%, 49%);
-    /* padding-top: 10px; */
     font-size: 20px;
+    background-color: white;
+    width: 120px; 
+    padding: 15px 45px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.main-page .main-container .text .btn a:hover {
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.main-page .footer .contacts {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.main-page .footer .contacts i {
+    color: #fff;
+    font-size: 35px;
+    transition: 0.3s;
+
+}
+
+.main-page .footer .contacts i:hover {
+    color: hsl(300, 69%, 71%);
 }

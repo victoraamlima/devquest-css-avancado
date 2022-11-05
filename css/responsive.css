@@ -1,0 +1,40 @@
+@media (max-width: 769px) {
+    .main-page {
+        background-image: url(../images/bg-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+   
+    .main-page .header {
+        text-align: center;
+    }
+
+    .main-page .main-container {
+        grid: "image" "text";
+        margin-bottom: 70px;
+    }
+
+    .main-page .main-container .text{
+        align-items: center;
+    }
+
+    .main-page .footer .contacts {
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 426px) {
+    .main-page {
+        padding: 30px;
+    }
+
+    .main-page .main-container .text h2 {
+        font-size: 30px;
+    }
+
+    .main-page .main-container .text p {
+        font-size: 13px;
+    }
+}

@@ -1,6 +1,6 @@
 html {
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 body {
@@ -12,29 +12,60 @@ body {
     grid: "header"
           "main"
           "footer";
+    grid-template-columns: 1fr;
     background-image: url(../images/bg-desktop.svg);
-    background-size: cover;
-}
-
-.main-page .header {
-    margin: 40px;
-    width: 100%;
+    background-size: 1318px 800px;
+    background-repeat: no-repeat;
+    grid-gap: 70px;
+    padding: 65px;
 }
 
 .main-page .header img {
-    width: 150px;
+    width: 215px;
 }
 
 .main-page .main-container {
     display: grid;
     grid: "image text ";
+    grid-template-columns: minmax(709px, 1fr) 1fr;
+    grid-gap: 65px;
+}
+
+.main-page .main-container .image {
+    width: 100%;
+    /* min-width: 709px; */
 }
 
 .main-page .main-container .text {
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.main-page .main-container .text a{
-    color: white;
+.main-page .main-container .text h2 {
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
 
+.main-page .main-container .text p {
+    font-size: 18.5px;
+    font-weight: 400;
+}
+
+.main-page .main-container .text .btn{
+    text-align: center;
+    border-radius: 30px;
+    /* height: 60px; */
+    width: 120px; 
+    background-color: white;
+
+    padding: 15px 60px;
+}
+
+.main-page .main-container .text .btn a {
+    color: hsl(257, 40%, 49%);
+    /* padding-top: 10px; */
+    font-size: 20px;
 }
